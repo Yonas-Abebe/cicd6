@@ -14,7 +14,7 @@ http://www.mulesoft.org/schema/mule/secure-properties http://www.mulesoft.org/sc
 		<db:mssql-connection host="${db.host}" instanceName="${db.instanceName}" port="${db.port}" user="${db.user}" password="${secure::db.password}" databaseName="${db.databaseName}" />
 	</db:config>
 <configuration-properties doc:name="Configuration properties" doc:id="107b1247-6785-41b1-8381-e453324a5037" file="configuration\local.properties" />
-<secure-properties:config name="Secure_Properties_Config" doc:name="Secure_Properties_Config" doc:id="c670d9e3-c86a-454e-bb79-25c7c83410b0" file="configuration\local-secured.properties" key="${secure.key}">
+<secure-properties:config name="Secure_Properties_Config" doc:name="Secure_Properties_Config" doc:id="c670d9e3-c86a-454e-bb79-25c7c83410b0" file="configuration\local-secured.properties" key="Mayo7882*#*Redu2009*#*">
 		<secure-properties:encrypt algorithm="Blowfish" />
 	</secure-properties:config>
 	
