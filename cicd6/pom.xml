@@ -25,11 +25,10 @@
 				<version>3.0.0</version>
 			</plugin>
 			<plugin>
-	<groupId>org.mule.tools.maven</groupId>
-	<artifactId>mule-app-maven-plugin</artifactId>
-	<version>1.7</version>
-	<extensions>true</extensions>
-
+				<groupId>org.mule.tools.maven</groupId>
+				<artifactId>mule-maven-plugin</artifactId>
+				<version>${mule.maven.plugin.version}</version>
+				<extensions>true</extensions>
 				<configuration>
 					<sharedLibraries>
 						<sharedLibrary>
@@ -37,6 +36,20 @@
 							<artifactId>mssql-jdbc</artifactId>
 						</sharedLibrary>
 					</sharedLibraries>
+					
+									<cloudHubDeployment>
+						<uri>https://anypoint.mulesoft.com</uri>
+						<muleVersion>${mule.version}</muleVersion>
+						<username>${anypoint.username}</username>
+						<password>${anypoint.password}</password>
+						<environment>${env}</environment>
+						<applicationName>${appname}</applicationName>
+						<businessGroup>${business}</businessGroup>
+						<workerType>${vCore}</workerType>
+						<workers>${workers}</workers>
+						<objectStoreV2>true</objectStoreV2>
+					</cloudHubDeployment>
+					
 				</configuration>
 			</plugin>
 		</plugins>
@@ -94,6 +107,7 @@
         <url>https://repository-master.mulesoft.org/snapshots/</url>
         <layout>default</layout>
     </repository>
+		
 	</repositories>
 
 	<pluginRepositories>
@@ -109,4 +123,3 @@
 	</pluginRepositories>
 
 </project>
-
