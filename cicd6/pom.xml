@@ -130,5 +130,14 @@
 			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
+    <distributionManagement>
+        <!-- Target Anypoint Organization Repository -->
+        <repository>
+            <id>MuleRepository</id>
+            <name>Your Anypoint Exchange Repository</name>
+            <url>https://maven.anypoint.mulesoft.com/api/v2/organizations/202f8892-74e5-4ca8-8aba-c03b6b336322/maven</url>
+            <layout>default</layout>
+        </repository>
+    </distributionManagement>
 
 </project>
